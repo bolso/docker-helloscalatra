@@ -13,5 +13,6 @@ class docker-helloscalatra {
 
 	docker::run { 'hohoho':
 		image => 'jads/hello-scalatra-jenkins',
+	}
 }
 
