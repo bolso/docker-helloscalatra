@@ -8,6 +8,6 @@ class docker-helloscalatra {
 
 	docker::run { 'hohoho':
 		image => 'jads/hello-scalatra-jenkins',
-		ports => '8080:8080',
+		ports => ['8080:8080'],
 	}
 }
