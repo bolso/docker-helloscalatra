@@ -1,5 +1,5 @@
 class docker-helloscalatra {
-    include 'docker'
+    include 'dockerzzzz'
     
     docker::image { 'kizzie/hello-scalatra':
       ensure => 'latest',
