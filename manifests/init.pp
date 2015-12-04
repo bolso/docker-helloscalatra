@@ -1,7 +1,7 @@
 class docker-helloscalatra {
     include 'docker'
     
-    docker::image { 'kizzie/hello-scalatra':
+    docker::image { 'jads/hello-scalatra-jenkins':
       ensure => 'latest',
     }
     
@@ -10,7 +10,7 @@ class docker-helloscalatra {
     }
     
     docker::run { 'hello-scalatra':
-      image   => 'kizzie/hello-scalatra',
+      image   => 'jads/hello-scalatra-jenkins',
       ports   => ['8080:8080'],
       pull_on_start   => true,
     }
